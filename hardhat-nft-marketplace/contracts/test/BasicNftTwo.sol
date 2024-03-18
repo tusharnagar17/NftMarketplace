@@ -13,7 +13,7 @@ contract BasicNftTwo is ERC721 {
         s_tokenCounter = 0;
     }
 
-    function mint() public {
+    function mintNft() public {
         _safeMint(msg.sender, s_tokenCounter);
         emit DogMinted(s_tokenCounter);
         s_tokenCounter = s_tokenCounter +1;
